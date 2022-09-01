@@ -1,0 +1,57 @@
+<!DOCTYPE html>    
+<html  lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLA FUNCIÓN LÓGICA </title>
+    <style>
+        table {border: 1px solid rgb(0, 255, 0); text-align: center; table-layout: auto;}
+        td:active {background-color :blue;color :white;}
+        tr:nth-of-type(even) {background-color: rgb(255, 157, 230);} /* y  los impares es con odd*/
+        thead > tr {background-color: blueviolet;}
+        tbody > tr :hover {background-color: cadetblue;}
+        body > table > thead {text-align: center;}
+    </style>
+    </head>
+    <body>
+        <thead><tr><th>Tabla lógica OR</th></tr></thead>
+        <table>
+            <thead> 
+              <tr><th>  A  </th><th>  B  </th><th>  A OR B  </th></tr> 
+            </thead>
+            <tbody>
+                <tr><td>  0  </td><td>  0  </td><td>  0  </td></tr>
+                <tr><td>  0  </td><td>  1  </td><td>  1  </td></tr>
+                <tr><td>  1  </td><td>  0  </td><td>  1  </td></tr>
+                <tr><td>  1  </td><td>  1  </td><td>  1  </td></tr>
+            </tbody>
+        </table>
+        <br>
+        <thead><tr><th>Tabla lógica AND</th></tr></thead>
+        <table>
+            <thead>
+              <tr><th>  A  </th><th>  B  </th><th>  A AND B  </th></tr> 
+            </thead>
+            <tbody>
+                <tr><td>  0  </td><td>  0  </td><td>  0  </td></tr>
+                <tr><td>  0  </td><td>  1  </td><td>  0  </td></tr>
+                <tr><td>  1  </td><td>  0  </td><td>  0  </td></tr>
+                <tr><td>  1  </td><td>  1  </td><td>  1  </td></tr>
+            </tbody>
+        </table>
+        <br>
+        <thead><tr><th>Tabla lógica NOT</th></tr></thead>
+        <table>
+            <thead>
+              <tr><th>  A  </th><th>  B  </th><th>  A NOT B  </th></tr> 
+            </thead>
+            <tbody>
+                <tr><td>  0  </td><td>  0  </td><td>  1  </td></tr>
+                <tr><td>  0  </td><td>  1  </td><td>  0  </td></tr>
+                <tr><td>  1  </td><td>  0  </td><td>  0  </td></tr>
+                <tr><td>  1  </td><td>  1  </td><td>  0  </td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>
