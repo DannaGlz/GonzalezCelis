@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cajaRelativa{
+            POSITION : relative;
+            width: 500px;
+            height: 300px;
+            border: 30px solid rgb(255, 136, 0);
+            overflow: scroll;
+        }
+        .cajaAbsoluta{
+            POSITION : relative;
+            width: 50px;
+            height: 50px;
+            border: 18px solid rgb(238, 255, 0);
+            background-color: brown;
+            top: 50px;
+            left:93px;
+        }
+        .cajaAbsoluta2{
+            POSITION : relative;
+            width: 50px;
+            height: 50px;
+            border: 18px solid rgb(238, 255, 0);
+            background-color: rgb(42, 95, 165);
+            top: 50px;
+            left:300px;
+        }
+        #caja2 {
+            left: 100px;
+            overflow: scroll;
+        }
+        .cajaFija {
+            POSITION : fixed;
+            width: 50px;
+            height: 50px;
+            border: 30px solid violet;
+            top: 50px;
+            left:100px;
+        }
+        #caja1{
+            text-align: center;
+            clear: left; 
+            padding-top: 200px;
+            top: 50px;
+            background-color: rgb(65, 228, 43);
+            text-size-adjust: 50px;
+            left: 800px;
+            text-decoration-color: deeppink;
+            overflow: scroll;
+        } 
+            #caja3{
+            text-align: center;
+            clear: left; 
+            padding-top: 200px;
+            top: 50px;
+            background-color: darkorchid;
+            text-size-adjust: 50px;
+            left: 800px;
+            overflow: scroll;
+        } 
+        #caja5{
+            text-align: center;
+            clear: left; 
+            padding-top: 200px;
+            top: 50px;
+            background-color: rgba(199, 30, 66, 0.795);
+            text-size-adjust: 50px;
+            left: 800px;
+            overflow: scroll;
+            z-index: 100x;
+        } 
+    </style>
+</head>
+<body>
+    <div id="caja1" class = "cajaRelativa"><H1>CAJA 1</H1></div>
+    <div class = "cajaRelativa">
+        <div class = "cajaAbsoluta"></div>
+    </div>
+    <div id="caja3" class ="cajaRelativa"> <H1>CAJA 3</H1> </div>
+    <div class ="cajaRelativa">
+        <div class = "cajaAbsoluta2"></div>
+    </div>
+    <div id="caja5" class ="cajaRelativa"> <H1>CAJA 5</H1> </div>
+    <div class ="cajaFija"></div>
+    <div class ="cajaRelativa"></div>
+</body>
+</html>
