@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+
+ul > li > ul {
+    display: none;
+}
+
+ul > li:target > ul {
+    display: block;
+    height: 100%;
+}
+
+.opcion {
+    background: blueviolet;
+    color: beige;
+}
+
+a { color:beige;
+    text-decoration: none;
+}
+
+.subOpcion {
+    padding-left: 20px;
+    background: rgb(160, 38, 95);
+    color: beige;
+}
