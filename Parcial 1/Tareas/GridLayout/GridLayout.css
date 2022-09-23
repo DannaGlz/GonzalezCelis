@@ -1,0 +1,32 @@
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 228, 230);
+
+    display: grid;
+    grid-template-columns: 10% 45% 30%;
+    grid-template-rows: 20% 40% 40% 10%;
+
+    grid-template-areas:'enca enca enca'
+                        'colum1 colum1 menulat'
+                        'colum2 colum2 menulat'
+                        'piePag piePag piePag';
+
+    justify-content: stretch;
+    align-content: stretch;
+   
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.caja{
+    background-color: rgb(255, 0, 89);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 0, 0.889);
+}
+
+#enca {grid-area: enca;}
+#menulat { grid-area: menulat; }
+#colum1 {grid-area: colum1; }
+#colum2 {grid-area: colum2; }
+#piePag { grid-area: piePag;}
