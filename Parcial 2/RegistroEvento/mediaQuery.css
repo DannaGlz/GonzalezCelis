@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor {
+    width: 100%;
+    height: 600px;
+    background-color: gold ;
+} 
+
+#caja1{
+   background-color: brown;
+}
+#caja2{
+    background-color: rgb(42, 165, 79);
+ }
+ #caja3{
+    background-color: rgb(65, 42, 165);
+ }
+ #caja4{
+    background-color: rgb(104, 8, 99);
+ }
+ #caja5{
+    background-color: rgb(211, 101, 28);
+ }
+ #caja6{
+    background-color: rgb(28, 211, 202);
+ }
+.caja {
+    /* Uso de la propiedad float para elementos flotantes*/
+    float: left;
+    border: 2px solid blue;
+   /* width: 100px;*/
+    width: calc((100% / 6) - 4px);
+    height: 100px;
+    margin: 2px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px ) and (min-width : 400px){
+    #caja4{
+        clear: left;
+    }
+    /* Calculo de el ancho de un elemento dinámicamente con la función calc() */
+    .caja{
+        width: calc((100% / 3) - 4px);
+    }
+}
+@media screen and (max-width: 339px ) {
+    /* Uso de la propiedad clear para elementos flotantes*/
+    .caja{ clear: left;
+        width: calc(100% - 4px);
+    }
+}

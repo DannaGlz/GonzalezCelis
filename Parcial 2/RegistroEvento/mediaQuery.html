@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="mediaQuery.css">
+</head>
+<body>
+   <div class ="contenedor"> 
+        <div id="caja1" onclick="alert('GOOGLE, dirijase a este link: https://www.google.com')" class="caja"> <H1>GOOGLE</H1> </div>
+        <div id="caja2" class="caja"> <H1>SIIE TECNM</H1> </div>
+        <div id="caja3" class="caja"> <H1>DISCORD</H1> </div>
+        <div id="caja4" class="caja"> <H1>FACEBOOK</H1> </div>
+        <div id="caja5" class="caja"> <H1>YOUTUBE</H1> </div>
+        <div id="caja6" class="caja"> <H1>OFFICE</H1> </div>
+   </div> 
+   <script>
+    document.getElementById("caja2").onclick=()=> alert('SIIE TECNM, dirijase a este link: https://siie.nlaredo.tecnm.mx/Alumno')
+    document.querySelector("#caja3").addEventListener("click", ()=>alert('DISCORD, dirijase a este link: https://discord.com/'))
+    document.getElementById("caja4").onclick=()=> alert('FACEBOOK, dirijase a este link: https://www.facebook.com/')
+    document.getElementById("caja5").onclick=()=> alert('YOUTUBE, dirijase a este link: https://youtube.com/')
+    document.getElementById("caja6").onclick=()=> alert('OFFICE, dirijase a este link: https://office.live.com/')
+   </script>
+</body>
+</html>
