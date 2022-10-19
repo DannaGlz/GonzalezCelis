@@ -1,0 +1,21 @@
+.head{
+    background: rgb(158, 95, 230);
+    text-align: center;
+}
+
+.col1{
+    background: rgb(187, 58, 133);
+}
+
+.col2{
+    background: rgb(44, 27, 194);
+}
+
+.col3{
+    background: rgb(208, 98, 25);
+}
+
+.col4{
+    background: rgb(73, 184, 56);
+    color: white;
+}
