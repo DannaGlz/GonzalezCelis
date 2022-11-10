@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="cad">Cadena</label>
+    <input id="cad" type="text">
+    <button id="btn">Procesar</button><br>
+    <input id="cadMay" type ="text" disabled>
+
+    <script type="module">
+        import{mayusculas,Longitud} from "./modulo.js";
+        document.getElementById("btn").addEventListener("click", function(){
+        let valor=document.getElementById("cad").value;
+        let valorM=mayusculas(valor);
+        document.getElementById("cadMay").value=valorM;
+        });
+    </script>
+</body>
+</html>
