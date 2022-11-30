@@ -21,12 +21,14 @@ window.addEventListener("load", async function () {
 
 document.querySelector("#btnBuscar").addEventListener("click", async () => {
   let datosFormulario = new FormData(document.getElementById("formulario"));
-  let respuesta = await fetch("php/buscarNumeroControl.php", {
+  let respuesta = await fetch("buscarNumeroControl.php", {
     method: "POST",
     body: datosFormulario,
   });
 
   let dato = await respuesta.json();
+
+  console.log(dato)
 
   document.getElementById("parNumeroControl").value = dato.numero_control;
   document.getElementById("parNombre").value = dato.nombre;

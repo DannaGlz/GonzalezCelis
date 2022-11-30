@@ -3,8 +3,8 @@
 session_start();
 
 $servidor = "localhost";
-$basedatos = "alumnos";
+$basedatos = "baseavion";
 $usuario = "root";
-$password = "";
+$password = "root";
 
 $con = mysqli_connect($servidor, $usuario, $password, $basedatos) or die("No se pudo conectar a la base de datos");
