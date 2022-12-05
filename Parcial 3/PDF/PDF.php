@@ -12,7 +12,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','',12);
 $pdf->Cell(40,10,"Nombre:"." ".$nombre." ".$apellidos,2,'C');
 $pdf->Ln();
-$pdf->Cell(40,10,"Sueldo:"." ".$calificacion,2,'C');
+$pdf->Cell(40,10,"Calificacion:"." ".$calificacion,2,'C');
 $pdf->Ln();
 $pdf->Output();
 ?>
