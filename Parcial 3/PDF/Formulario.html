@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <label for="apellidos">Apellidos</label>
+    <input type="text" id="apellidos" name="apellidos">
+    <label for="calificacion">Calificacion</label>
+    <input type="text" id="calificacion" name="calificacion">
+    <input type="button" value="Crear PDF" id="btn">
+    </form>
+    <script>
+        document.getElementById('btn').addEventListener('click',async()=>{
+             const form= new FormData(document.getElementById('form'));
+            const results= await fetch('PDF.php',{
+                method:'POST',
+                body:form
+            })
+            let data=await results.blob()
+            console.log(data)
+            let archivo =URL.createObjectURL(data)
+            window.open(archivo);
+        })
+    </script>
+</body>
+</html>
