@@ -17,7 +17,7 @@ if (isset($_POST['agregarAlumno'])) {
     $_SESSION['mensaje'] = "Alumno agregado correctamente";
     $_SESSION['tipo'] = "success";
 
-    header("Location: index.html");
+    header("Location: index.php");
 }
 
 ?>
